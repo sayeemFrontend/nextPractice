@@ -1,0 +1,63 @@
+.selectedInput {
+  position: relative;
+  font-size: 14px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+}
+.selectedInput:focus-within {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.inputContainer {
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+.inputContainer span {
+  cursor: pointer;
+}
+.inputContainer svg {
+  transition: all 0.1s ease;
+}
+.inputContainer.rotate svg {
+  transform: rotate(180deg);
+}
+
+.inputContainer input {
+  border: none;
+  width: 100%;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+.selBoxContainer {
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px 4px;
+  box-shadow: 1px 4px 10px rgb(0 0 0 / 25%);
+  z-index: 111;
+}
+.selBoxContainer li {
+  cursor: pointer;
+  padding: 10px;
+}
+.selBoxContainer li:hover {
+  background-color: rgb(128 128 128/10%);
+  border-radius: 5px;
+}
+
+.selBoxPosition {
+  top: 35px;
+}
+.modalPosition {
+  top: 35px;
+}
+.modalPosition li:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}

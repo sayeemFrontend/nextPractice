@@ -1,0 +1,16 @@
+.ninjas ul{
+    width: 100%;
+    list-style: none;
+}
+.ninjas ul>li{
+    padding: 10px 15px;
+    margin: 10px 0px;
+    background: white;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: "Roboto";
+}
+.ninjas li:hover{
+    border-left: 5px solid blue;
+    padding-left:10px ;
+}
